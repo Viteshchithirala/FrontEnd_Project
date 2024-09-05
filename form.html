@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container"
+        style="border: 2px solid gray; width: 40%;
+         margin:20px;
+         padding: 20px;
+         box-shadow: 0 0 10px black;
+         border-radius: 10px;">
+         <header style="text-align: center;">
+            <h1 style="font-family:sans-serif;">Signup Details</Details></h1>
+         </header>
+    <form action="/submit" method="post">
+        <h1>Student Details</h1>
+        <label>Name :</label>
+        <input type="text"
+        placeholder="Enter your Name"/>
+        <br/><br/>
+        <label>Date Of Birth :</label>
+        <input type="date"
+        placeholder="Enter your DOB"/>
+        <br/><br/>
+        <label>age :</label>
+        <input type="number"
+        placeholder="Enter your age"/>
+        <br/><br/>
+        <label>College Name :</label>
+        <input type="text"
+        placeholder="Enter your  College Name"/>
+        <br><br/>
+        <label>Mobile no :</label>
+        <input type="number"
+        placeholder="Enter phone number"/>
+        <br><br/>
+
+        <fieldset style="width: 20%;">
+            <legend>Gender :</legend>
+            <input type="radio"name="Gender" id="male" value="male"/>
+            <label>Male</label><br/>
+            <input type="radio"name="Gender" id="Female" value="Female"/>
+            <label>Female</label><br/>
+            <input type="radio"name="Gender" id="Others" value="Others"/>
+            <label>Others</label><br/>
+        </fieldset>
+        <br/><br/>
+        <fieldset style="width: 20%;">
+            <legend>Skills :</legend>
+            <input type="checkbox"name="Skills" id="HTML" value="HTML"/>
+            <label>HTML</label><br/>
+            <input type="checkbox"name="Skills" id="CSS" value="CSS"/>
+            <label>CSS</label><br/>
+            <input type="checkbox"name="Skills" id="JAVA" value="JAVA"/>
+            <label>JAVA</label><br/>
+        </fieldset>
+        <br/><br/>
+        <label for="role">Select Role:</label>
+        <select id="role" name="role" required>
+            <option value="Student">Student</option>
+            <option value="employee">employee</option>
+        </select>
+        <br/><br/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required/>
+        <br/><br/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required/>
+        <br/><br/>
+        <label for="note">Note :</label><br/>
+        <textarea id="note" name="note" rows="4" cols="50"></textarea>
+        <br/><br/>
+        <input type="submit" value="Submit"/>
+    </form>
+    </div>
+</body>
+</html>
