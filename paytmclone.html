@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm</title>
+</head>
+<style>
+    a{
+        text-decoration: none;
+    }
+    body{
+        margin: 0px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0.5% 2%;
+        position: sticky;
+        top: 0px;
+        background-color: white;
+
+    }
+    .navbar a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .navbar a:hover{
+        opacity: 0.8;
+        background-color: lightgray;
+        box-sizing: content-box;
+        border-radius: 100px;
+    }
+    .content{
+        background-color:#00B9F1 ;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin: 0;
+        padding: 50px;
+        cursor: pointer;
+    }
+    .mycls{
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .mycls img:hover{
+        opacity: 0.8;
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    span{
+        border-radius: 50px;
+        background-color: #00B9F1;
+        color: white;
+        padding: 10px;
+    }
+    .mycls span:hover{
+        background-color: rgb(21, 21, 131);
+    }
+    .container{
+        margin: 8rem;
+        border: 20px;
+    }
+    .download_btn{
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    align-self: flex-start;
+    padding: 10px;
+    cursor: pointer;
+    }
+    .download_btn :hover{
+        transition: 0.2s ease-in-out;
+        box-shadow: 5px 5px 5px rgb(237, 236, 234);
+    }
+    a :hover{
+        cursor: pointer;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 110px;
+        margin-bottom: 100px;
+    }
+    .left{
+        padding: 100px;
+        width: 500px;
+    }
+    .left img{
+        width: 80px;
+    }
+    .hero_image{ 
+        width: 500px;
+    }
+    .hero_image img{
+        width: 500px;
+    }
+    .hero-content h1{
+        font-family: sans-serif;
+        font-weight: 1200;
+        font-size: 50px;
+    }
+    .hero-content p{
+        font-family: sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    footer{
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+        padding: 40px;
+        display: flex;
+        gap: 20px;
+    }
+    footer p{
+        margin: 10px;
+        font-size: 20px;
+        color:black
+    }
+</style>
+<body>
+        <nav class="navbar">
+                <img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logo.svg" alt="paytm logo"/>
+            <a href="">Paytm for Users</a>
+            <a href="">Paytm for Business</a>
+            <a href="">Bank acoounts</a>
+            <a href="">UPI Services</a>
+            <a href="">Recharge</a>
+            <a href="">Credit Bills</a>
+            <a class="Signin" href="">
+                <span>Signin</span>
+            </a>
+        </nav>
+        <div class="content">
+            <h1>Recharge & Pay Bills on Paytm.</h1>
+            <div class="mycls">
+            <div class="Recharge">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="Recharge" height="70px"/><br/><br/>
+                <div class="content1">
+                    Recharge
+                    <div>Prepaid</div>
+                    <div>Mobile</div>
+                </div>
+            </div>
+            <div class="electricity">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" alt="electricity" height="70px"/><br/><br/>
+                <div class="content2">
+                    Pay
+                    <div>Electricity</div>
+                    <div>Bill</div>
+                </div>
+            </div>
+            <div class="DTH">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" alt="DTH" height="70px"/><br/><br/>
+                <div class="content2">
+                    Recharge
+                    <div>DTH</div>
+                    <div>Connection</div>
+                </div>
+            </div>
+            <div class="Book">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" alt="Book" height="70px"/><br/><br/>
+                <div class="content3">
+                    Book
+                    <div>Gas</div>
+                    <div>Cylinder</div>
+                </div>
+            </div>
+            <div class="Pay">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/1269194/1672827522093.png" alt="Broadband"height="70px"/><br/><br/>
+                <div class="content4">
+                    Pay
+                    <div>Broadband &</div>
+                    <div>Landbill</div>
+                </div>
+            </div>
+            <div class="fee">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/1269198/1672828917034.png" alt="fee"height="70px"/><br/><br/>
+                <div class="content5">
+                    Pay
+                    <div>Education</div>
+                    <div>fee</div>
+                </div>
+            </div>
+            <div class="Payment">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png" alt="Services" height="70px"/><br/><br/>
+                <div class="content6">
+                    All
+                    <div>Payment</div>
+                    <div>Services</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--hero content -->
+        <div class="hero">
+            <div class="left">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/310944/1697527183231.png" alt="logo"> 
+                <div class="hero-content">
+                    <h1>India's Most-loved Payments App</h1>
+                    <p>Recharge & pay bills, book flights & movie tickets, invest in stocks & mutual funds, and do a lot ,more.</p>
+                    <button class="download_btn">Download Payment App<img src="" alt="Apple Store"><img src="" alt="Googleplay Store"></button>
+                </div>
+            </div>
+            <div class="hero_image">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1715933362922.png" alt="heroimage">
+            </div>
+        </div>
+    <footer>
+        <div class="foot">
+            <p>Download Paytm App <br>
+                to Pay from anywhere</p>
+        </div>
+        <div class="download"></div>
+            <img src="https://www.shutterstock.com/image-vector/ukraine-kropyvnytskyi-april-26-2023-260nw-2293917457.jpg" alt="appstore" height="80px"/>
+        
+        </div>
+    </footer>
+</body>
+</html>
