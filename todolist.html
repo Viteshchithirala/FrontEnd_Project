@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body>
+    <h1>Modifying DOM</h1>
+    <input type="text" id="itemInput" placeholder="Enter an item">
+    <button id="addItemButton">Add Task</button>
+    <ul id="ItemList"></ul>
+    <script>
+        const addItemButton = document.getElementById('addItemButton');
+        const itemInput = document.getElementById('itemInput'); // Changed 'ItemInput' to 'itemInput'
+        const itemList = document.getElementById('ItemList');   // Also changed variable name to be consistent (itemList instead of ItemList)
+
+        addItemButton.addEventListener('click', function() {
+            const task = itemInput.value.trim();
+
+            if (task !== '') {
+                const li = document.createElement('li');
+                li.textContent = task;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                li.appendChild(deleteButton);
+
+                li.addEventListener('click', function() {
+                    li.classList.toggle('completed');
+                });
+
+                deleteButton.addEventListener('click', function(e) {
+                    e.stopPropagation(); 
+                    li.remove();
+                });
+
+                itemList.appendChild(li); 
+                itemInput.value = ''; 
+            }
+        });
+    </script>
+</body>
+</html>
